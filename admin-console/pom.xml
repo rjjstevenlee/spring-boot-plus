@@ -21,5 +21,16 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 	</dependencies>
-
+	<build>
+		<finalName>StevenPlus</finalName>  <!-- 最终package打包的jar名称，注意这里没有版本号了。 -->
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.ibeetl.admin.CosonleApplication</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
